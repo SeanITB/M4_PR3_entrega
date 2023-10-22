@@ -1,0 +1,299 @@
+body{
+    height: auto;
+}
+#cabezera1{
+    margin: 0px;
+    border: 0px;
+    padding: 25px;
+    width: 100%;
+    height: 10%;
+    background-color: #0A91AB;
+    Display: flex;
+    /*justify-content:center;*/
+}
+#cabezera2{
+    position: sticky;
+    top:0; 
+    z-index: 1;
+}
+.medio{
+    text-align: center;               
+}
+#cabezera{
+    color:#FFC045;
+    font-size: 50px;
+    font-family: 'Kanit';
+    width: 100%;
+}
+nav{
+    margin: 0px;
+    border: 0px;
+    padding: 25px;
+    width: 100%;
+    height: 0px;
+    background-color: #FFC045;
+    Display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color:#0A91AB;
+}
+h1{
+    color:#0A91AB;
+    font-size: 30px;
+}
+h2, h3, h4{
+    color: #FFC045;
+}
+p{
+    font-size: 14px;
+}
+.contenedor{
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+}
+article.elemento_y_contenedor_flexbox_videojuego{
+    margin: 30px;
+    border: 3px;
+    border-style: dotted;
+    border-radius: 3%;
+    border-color: #FFC045;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    contain: paint; 
+}
+div.videojuego_texto{
+    object-fit: cover;
+    width: 98%;
+    height: 50%;
+    margin: 0px;
+}
+img.elemento_flexbox_videojuego{
+    /*object-fit: cover; */
+    width: 100%;
+    height: 50%;
+    /*margin: 0px;*/
+}
+.anchura{
+    width: 100%;
+}
+button{
+    border:0px;
+    border-radius: 3%;
+    background-color: #FFC045;
+    position: absolute;
+    z-index: 1;
+    right: 10px;
+}/*
+h1.medio{
+    text-align: center;               
+}*/
+div.contenedor_flexbox_noticias{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+article.elemento_y_contenedor_flexbox_noticias{
+    margin: 30px;
+    border: 3px;
+    border-style: solid;
+    border-radius: 3%;
+    border-color:#0A91AB;
+    padding: 5px;
+    width: 425px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    contain: paint;
+    flex-direction: column;
+    justify-content: space-around;
+}
+div.noticias_texto{
+    position: absolute;
+    top:0;
+    object-fit: cover;
+    width: 98%;
+    height: 40%;
+    margin: 0px;
+}
+.linea{
+    border-top: 3px solid #FFC045;
+    height: 0px;
+    max-width: 350px;
+    padding: 0;
+    margin: 20px auto 0 auto;
+}
+.titulo_noticas{
+    text-align: center;
+}
+img.notica_imagen{
+    position: absolute;
+    bottom:0;
+    left:0;
+    object-fit: cover; 
+    width: 100%;
+    height: 60%;
+    margin: 0px;
+}
+div.contenedor_flexbox_ranking{
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+}
+/*Ajustar bien lo acontinuación*/
+
+article.elemento_y_contenedor_flexbox_ranking{
+    margin: 0px;
+    padding: 15px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    contain: paint;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+figure{
+    margin: 0px;
+}
+img.ranking_imagen{
+    object-fit: cover; 
+    width: 100%;
+    height: 60%;
+    margin: 0px;
+    border-radius:50%;
+}
+div.rankint_texto{
+    position: absolute;
+    bottom: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 40%;
+    margin: 0px;
+}
+div.contenedor_flexbox_trucos{
+    margin: 0px;
+    border: 3px;
+    border-style: dotted;
+    border-radius: 2%;
+    border-color:black;
+    padding: 5px;
+    width: 350px;
+    height: 1200px;
+    float: left;
+    background-color: #0A90AB25;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.elemento_flexbox_truco{
+    text-align:center;             /*AQUI*/
+}
+article.elemento_y_contenedor_flexbox_trucos{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    flex-direction: column;
+    line-height: 0px;
+}
+p.elemento_flexbox_truco{
+    justify-content:center;           /*AQUI*/
+}
+footer{
+    background-color: #8A8070;
+    display: flex;
+    justify-content: space-between;
+
+}
+#elemento_flexbox_truco{
+    align-self: flex-end;
+}
+/*CSS exclusivo para todas las paginas masInfo */
+
+/* 
+TODO ESTO: NO ME ACUERDO QUE ERA:
+section.contenedor_flexbox_listado{
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+}
+article.elemento_flexbox_listado{
+    margin: 30px;
+    border: 3px;
+    border-style: dotted;
+    border-radius: 3%;
+    border-color: #FFC045;
+    padding: 5px;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+figure.elemento_flexbox_listado{ 
+    contain: paint;  
+}
+article.videojuego{
+    display: flex;
+    position: relative;
+    contain: paint;
+    flex-direction: column;
+}
+*/
+
+#main{
+    position: relative;
+    top: 0; /*NO FUNCIONA*/
+    background-color: #8A8070;
+}
+.masInfo_videojuego{
+    border: 3px;
+    border-style: dotted;
+    border-radius: 3%;
+    border-color: #FFC045;
+    width: 80%;
+    height: 100%;
+    background-color: aliceblue;
+    contain:paint;
+}
+.masInfo_imagen{
+    /*left:0;*/
+    /*object-fit: cover;*/ 
+    /*overflow: clip;*/
+    width: 100%;
+    height: 50%;
+    /*margin: 0px;*/
+}
+.masInfo_texto{
+    width: 100%;
+    height: 50%;  
+    margin: 10px; 
+}
+
+/* CSS pagina de contacto */
+#padre_contacto{
+    width: 100%;
+    height: 100%;
+    background-color: #0A91AB;
+}
+.cabezera_formulario{
+    width: 60%;
+    height: 3%;
+    margin: 20px;
+    padding: 5px;
+    background-color: #FFC045;
+}
+.main_formulario{
+    background-color:#0A91AB;
+}
